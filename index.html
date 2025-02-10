@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reCAPTCHA Example</title>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+            console.log(token)
+        }
+    </script>
+</head>
+<body>
+<form action="javascript:void(0);">
+    <button class="g-recaptcha"
+            data-sitekey="6Lfaic8qAAAAAGPjL720reqqVPp_CyhOg-W5Hy43"
+            data-callback="onSubmit"
+            data-action="submit">
+        Submit
+    </button>
+</form>
+</body>
+</html>
